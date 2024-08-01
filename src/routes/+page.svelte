@@ -1,2 +1,5 @@
-<h1 class="text-3xl text-red-500 text-center">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Button from '$lib/components/ui/button/button.svelte'
+</script>
+
+<Button>Button</Button>
