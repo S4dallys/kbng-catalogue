@@ -6,7 +6,8 @@
 
 <Sheet.Root>
     <Sheet.Trigger asChild let:builder
-        ><Button builders={[builder]} variant="ghost" class="p-0"><Menu /></Button></Sheet.Trigger
+        ><Button builders={[builder]} variant="ghost" class="hover:bg-white p-0"><Menu /></Button
+        ></Sheet.Trigger
     >
     <Sheet.Content side="left">
         <Sheet.Header>
