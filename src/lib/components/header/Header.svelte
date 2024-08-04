@@ -4,10 +4,12 @@
     import Sheet from './Sheet.svelte'
 </script>
 
-<header class="fixed top-0 h-[50px] w-full bg-white flex justify-between items-center px-2">
-    <Sheet />
-    <div>
-        <a href="/"><img src={logo_text} alt="logo" class="h-[25px]" /></a>
+<header class="fixed top-0 left-0 h-[50px] w-full bg-white">
+    <div class="container flex justify-between items-center">
+        <Sheet />
+        <div>
+            <a href="/"><img src={logo_text} alt="logo" class="h-[20px]" /></a>
+        </div>
+        <div><a href="/"><Phone /></a></div>
     </div>
-    <div><a href="/"><Phone /></a></div>
 </header>
