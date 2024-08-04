@@ -4,9 +4,9 @@
     import Footer from '$lib/components/footer/Footer.svelte'
 </script>
 
-<div class="relative container">
+<div class="relative container bg-white p-[80px]">
     <Header />
-    <main class="mt-[50px] flex flex-col justify-start items-center pb-12 py-4 gap-12">
+    <main class="flex flex-col justify-start items-center mb-32 gap-8">
         <slot />
     </main>
     <Footer />
