@@ -2,6 +2,9 @@
     export let text
 </script>
 
-<h1 class="text-3xl font-semibold text-center">
-    {text}
-</h1>
+<div>
+    <h1 class="text-3xl font-semibold text-center mb-4">
+        {text}
+    </h1>
+    <slot />
+</div>
