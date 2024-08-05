@@ -18,7 +18,7 @@
                 <li><a href="/">Cat 3</a></li>
             </ul>
         </div>
-        <p class="font-bold"><a href="/">About KB&G</a></p>
-        <p class="font-bold"><a href="/">Contact Us</a></p>
+        <p class="font-bold"><a href="/about">About KB&G</a></p>
+        <p class="font-bold"><a href="/contact">Contact Us</a></p>
     </div>
 </footer>

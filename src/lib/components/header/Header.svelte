@@ -11,5 +11,5 @@
     <div>
         <a href="/"><img src={logo_text} alt="logo" class="h-[20px]" /></a>
     </div>
-    <div><a href="/"><Phone /></a></div>
+    <div><a href="/contact"><Phone /></a></div>
 </header>

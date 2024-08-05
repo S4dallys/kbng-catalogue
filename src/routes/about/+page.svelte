@@ -1,4 +1,5 @@
 <script>
+    import { aboutUs } from '$lib/data'
     import Heading from '$lib/components/general/Heading.svelte'
     import BackButton from '$lib/components/general/BackButton.svelte'
     import logo_whole from '$lib/img/logo_whole.png'
@@ -9,9 +10,7 @@
 <div class="text-center max-w-[400px]">
     <h2 class="font-semibold text-xl mb-1">Who we are</h2>
     <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates ratione eius sit
-        ducimus magnam, itaque ex dolorum officia, sunt placeat nisi, praesentium perferendis optio
-        fugit et omnis animi nostrum incidunt.
+        {aboutUs}
     </p>
 </div>
 <BackButton text="Back to Home" link="/" />

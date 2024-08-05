@@ -1,6 +1,7 @@
 <script>
     export let title
     export let icon
+    export let items
 </script>
 
 <div class="w-1/4 min-w-[300px]">
@@ -9,6 +10,8 @@
         <p class="font-semibold mb-2">{title}</p>
     </div>
     <div class="text-center">
-        <slot />
+        {#each items as item, i (i)}
+            <p>{item}</p>
+        {/each}
     </div>
 </div>
