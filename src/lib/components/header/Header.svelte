@@ -5,7 +5,7 @@
 </script>
 
 <header
-    class="fixed top-0 left-0 h-[50px] w-full px-6 flex justify-between items-center bg-white shadow-sm shadow-gray-400"
+    class="z-10 fixed top-0 left-0 h-[50px] w-full px-6 flex justify-between items-center bg-white shadow-sm shadow-gray-400"
 >
     <Sidebar />
     <div>

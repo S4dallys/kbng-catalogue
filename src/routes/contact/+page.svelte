@@ -1,7 +1,7 @@
 <script>
     import { contactInfo } from '$lib/data'
     import Heading from '$lib/components/general/Heading.svelte'
-    import ContactItem from '$lib/components/general/ContactItem.svelte'
+    import ContactItem from '$lib/components/contact/ContactItem.svelte'
     import BackButton from '$lib/components/general/BackButton.svelte'
 </script>
 
