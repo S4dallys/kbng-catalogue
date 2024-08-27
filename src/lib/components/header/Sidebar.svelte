@@ -1,13 +1,17 @@
 <script>
+    import { navigating } from '$app/stores'
     import SidebarContent from './SidebarContent.svelte'
     import SidebarOthers from './SidebarOthers.svelte'
     import { Menu } from 'lucide-svelte'
     import * as Sheet from '$lib/components/ui/sheet'
     import { ScrollArea } from '$lib/components/ui/scroll-area/index.js'
     import Button from '../ui/button/button.svelte'
+
+    let open = false
+    $: if ($navigating) open = false
 </script>
 
-<Sheet.Root>
+<Sheet.Root bind:open>
     <Sheet.Trigger asChild let:builder
         ><Button builders={[builder]} variant="ghost" class="hover:bg-white p-0"><Menu /></Button
         ></Sheet.Trigger

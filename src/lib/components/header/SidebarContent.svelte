@@ -11,7 +11,7 @@
                 <p>
                     <a
                         class="inline font-bold hover:border-b hover:border-b-black"
-                        href={`/category/${cat.category}`}>{cat.category}</a
+                        href={`/categories/${cat.category}`}>{cat.category}</a
                     >
                 </p>
                 <ul class="sm:ml-4">
@@ -19,7 +19,7 @@
                         <li>
                             <a
                                 class="hover:border-b hover:border-b-black"
-                                href={`/category/${cat.category}?subcat=${subcat.subcategory}`}
+                                href={`/categories/${cat.category}?subcat=${subcat.subcategory}`}
                                 >{subcat.subcategory}</a
                             >
                         </li>

@@ -6,10 +6,8 @@
     import LinkGroup from '$lib/components/general/LinkGroup.svelte'
 
     let { categories } = $page.data
-
-    console.log(categories)
 </script>
 
 <SearchBar />
 <Heading text="Categories" />
-<LinkGroup />
+<LinkGroup content={categories} />

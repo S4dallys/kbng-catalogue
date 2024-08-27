@@ -3,7 +3,7 @@
 </script>
 
 <div>
-    <h1 class="text-3xl font-semibold text-center mb-4">
+    <h1 class="text-3xl font-semibold text-center mb-4 capitalize">
         {text}
     </h1>
     <slot />
