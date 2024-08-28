@@ -1,7 +1,9 @@
-export function load({ params, url }) {
-    const { category } = params
-    const selectedSubcat = url.searchParams.get('subcat')
-    const subcats = null
+import { getSearchParams } from '$lib/utility/index'
 
-    return { category, subcats, selectedSubcat }
+export async function load({ params, url, data }) {
+    const { subcats, items } = data
+    const { category } = params
+    const { selectedSubcat } = getSearchParams(url)
+
+    return { category, selectedSubcat, subcats, items }
 }

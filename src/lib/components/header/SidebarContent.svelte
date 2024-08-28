@@ -1,6 +1,5 @@
 <script>
     import { page } from '$app/stores'
-    import { redirect } from '@sveltejs/kit'
     let { categories } = $page.data
 </script>
 

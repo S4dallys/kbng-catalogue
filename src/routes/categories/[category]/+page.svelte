@@ -1,20 +1,24 @@
 <script>
+    import { goto } from '$app/navigation'
+    import { page } from '$app/stores'
     import Heading from '$lib/components/general/Heading.svelte'
     import Select from '$lib/components/general/Select.svelte'
 
     export let data
 
-    let selectedSubcat = { value: 'sub4', label: 'sub4' }
+    let { category, selectedSubcat, subcats, items } = data
+
+    if (selectedSubcat) {
+        selectedSubcat = { value: selectedSubcat, label: selectedSubcat }
+    }
+
+    subcats = subcats.map((x) => {
+        return { value: x, label: x }
+    })
+
+    $: if (selectedSubcat) console.log($page.url.pathname + '?subcat=' + selectedSubcat.value)
+    $: console.log(selectedSubcat)
 </script>
 
-<Heading text={data.category} />
-<Select
-    content={[
-        { value: 'sub1', label: 'sub1' },
-        { value: 'sub2', label: 'sub2' },
-        { value: 'sub3', label: 'sub3' },
-        { value: 'sub4', label: 'sub4' },
-        { value: 'sub5', label: 'sub5' }
-    ]}
-    bind:selected={selectedSubcat}
-/>
+<Heading text={category} />
+<Select content={subcats} bind:selected={selectedSubcat} />
